@@ -476,3 +476,9 @@ patches:
     See https://github.com/electron/electron/issues/14327
     (Android specific changes and changes in some test files
     have been removed from the diff.)
+-
+  author: Jeremy Apthorp <jeremya@chromium.org>
+  file: expose-net-observer-api.patch
+  description: |
+    Expose URLRequestContextGetter::{Add,Remove}Observer.
+    This patch should be removed once we switch to using the net service (cc @robo)
